@@ -1,14 +1,44 @@
 {
   "name": "pocketbase-typegen",
+  "version": "1.0.0",
+  "description": "TypeScript type generator for PocketBase collections",
   "module": "index.ts",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "bun test/test.ts"
+    "test": "bun test/test.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist",
+    "generate": "bun run ./src/index.ts"
   },
+  "keywords": [
+    "pocketbase",
+    "typescript",
+    "type-generator",
+    "schema",
+    "bun"
+  ],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/pocketbase-typegen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pocketbase-typegen/issues"
+  },
+  "homepage": "https://github.com/yourusername/pocketbase-typegen#readme"
 }
