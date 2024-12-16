@@ -1,7 +1,7 @@
 {
   "name": "@thisux/pocketbase-typegen",
-  "version": "1.0.4",
-  "description": "TypeScript type generator for PocketBase collections (CLI) & library",
+  "version": "1.0.5",
+  "description": "TypeScript type generator for PocketBase collections (CLI) & library. Still in development.",
   "module": "index.ts",
   "type": "module",
   "main": "dist/index.js",
