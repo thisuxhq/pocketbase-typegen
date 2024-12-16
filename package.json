@@ -1,15 +1,23 @@
 {
-  "name": "pocketbase-typegen",
-  "version": "1.0.0",
+  "name": "@thisux/pocketbase-typegen",
+  "version": "1.0.1",
   "description": "TypeScript type generator for PocketBase collections",
   "module": "index.ts",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "pocketbase-typegen": "./src/cli.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "bun test/test.ts",
     "build": "bun build ./src/index.ts --outdir ./dist",
-    "generate": "bun run ./src/index.ts"
+    "generate": "bun run ./src/index.ts",
+    "prepublishOnly": "bun build ./src/index.ts --outdir ./dist",
+    "publish": "bun publish"
   },
   "keywords": [
     "pocketbase",
@@ -35,10 +43,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/pocketbase-typegen.git"
+    "url": "git+https://github.com/thisuxhq/pocketbase-typegen.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/pocketbase-typegen/issues"
+    "url": "https://github.com/thisuxhq/pocketbase-typegen/issues"
   },
-  "homepage": "https://github.com/yourusername/pocketbase-typegen#readme"
+  "homepage": "https://github.com/thisuxhq/pocketbase-typegen#readme"
 }
