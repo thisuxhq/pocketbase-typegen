@@ -19,4 +19,3 @@ export async function pbTypegenToFile(inputPath: string, outputPath?: string): P
   await Bun.write(targetPath, types);
 }
 
-
