@@ -1,6 +1,6 @@
 {
   "name": "@thisux/pocketbase-typegen",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript type generator for PocketBase collections (CLI) & library",
   "module": "index.ts",
   "type": "module",
@@ -16,7 +16,6 @@
     "test": "bun test/test.ts",
     "build": "bun build ./src/index.ts --outdir ./dist",
     "generate": "bun run ./src/index.ts",
-    "prepare": "bunx husky install",
     "prepublishOnly": "bun run build",
     "publish": "bun run build && npm publish"
   },
