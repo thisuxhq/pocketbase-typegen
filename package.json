@@ -1,0 +1,14 @@
+{
+  "name": "pocketbase-typegen",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "bun test/test.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
